@@ -188,6 +188,8 @@ nav {
   background-color: var(--secondary);
   width: 100%;
   padding: 1% 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  border: 1px black dashed;
 }
 .socials p {
   font-size: 1vw;
@@ -197,8 +199,8 @@ nav {
   font-size: .8vw;
 }
 .icon-sizes {
-  width:4vw;
-  height:4vw;
+  width:3vw;
+  height:3vw;
  
 }
 .socials {
