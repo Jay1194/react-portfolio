@@ -10,7 +10,9 @@ const About = () => {
                 <h1 id="#About">About Me</h1>
             </div>
             <section className="content0">
+                <div class="content00">
             <img src={DevIMG} className="Me"  alt="Developer image"/>
+            </div>
             <div className='content1'>
             <h1 className="space">Jayden Taylor<a className="space" href="https://github.com/Jay1194"><span><DisplayGitHubIcon/></span></a></h1>
             <h3>Front-End Software Developer</h3>

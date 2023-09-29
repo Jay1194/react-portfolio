@@ -11,7 +11,7 @@ const Main = () => {
             <div className="typeEffect">
                 <Typewriter
                 onInit={(typewriter) => {
-            typewriter.typeString("Welcome to Jayden Taylors Profesional Portfolio").pauseFor(4000)
+            typewriter.typeString("Welcome to Jayden Taylors Professional Portfolio").pauseFor(4000)
             .deleteAll()
             typewriter.typeString('Powered By React').pauseFor(2000)
             .deleteAll()
