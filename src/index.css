@@ -29,6 +29,10 @@ body {
   background-color:var(--primary)
 }
 
+/* Hide Nav Bar*/ 
+.hidden-nav {
+display:none;
+}
 /* Moving back-ground*/
 video {
   width: 100%;
@@ -163,13 +167,13 @@ height: 30px;
 }
 
 /* Header Styling */
-header ul {
+.header-ul {
   display: flex;
   justify-content:space-evenly ;
   flex-wrap: wrap;
   margin: 1vw 0;
 }
-header li {
+nav li {
   list-style: none;
   font-size: 1.60vw;
   color: var(--third);
@@ -216,9 +220,10 @@ nav {
   color: #000000;
 }
 
+
  /* Screen Sizes*/
 @media screen and (max-width: 414px) {
-header li {
+nav li {
   font-size:5.5vw;
   margin-right:5vw;
   display: flex;
@@ -228,7 +233,9 @@ header li {
   text-align: center;
   }
   .typeEffect {
-    font-size:4.4vw;
+    font-size:7vw;
+    width: 80%;
+    text-align: center;
   }
   .aboutME h1 {
     font-size:9vw;
@@ -283,6 +290,12 @@ header li {
   .icon-size {
     width: 9vw;
     height:9vw;
+  }
+  .socials p {
+    font-size: 3vw;
+  }
+  .socials span {
+    font-size: 2.2vw;;
   }
 }
 
