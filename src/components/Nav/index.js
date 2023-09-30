@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Nav extends Component {
     constructor(props) {
       super(props);
@@ -31,6 +32,9 @@ class Nav extends Component {
   
       this.setState({ lastScrollTop: scrollTop });
     };
+    handleContactClick = () => {
+        this.props.setContactSelected(true);
+    };
   
     render() {
       const { hidden } = this.state;
@@ -48,7 +52,7 @@ class Nav extends Component {
               <a>Portfolio</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a onClick={this.handleContactClick}>Contact</a>
             </li>
             <li>
               <a>Resume</a>
@@ -59,5 +63,6 @@ class Nav extends Component {
       );
     }
   }
+
 
 export default Nav;
