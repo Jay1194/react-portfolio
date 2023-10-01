@@ -38,7 +38,7 @@ class Nav extends Component {
   
     render() {
       const { hidden } = this.state;
-  
+    
       return (
         <header>
         <nav className={hidden ? 'hidden-nav' : 'nav'}>
@@ -61,8 +61,8 @@ class Nav extends Component {
         </nav>
         </header>
       );
-    }
   }
+}
 
 
 export default Nav;

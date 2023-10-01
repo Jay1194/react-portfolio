@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Footer from '../Footer'
+
 // validate the email format, let's import the utility function validateEmail from the utils/helpers directory 
 import { validateEmail } from '../../utils/helpers';
 
@@ -53,21 +55,24 @@ function handleSubmit(e) {
     e.preventDefault();
     console.log(formState);
 }
+
     return (
-        <section>
-            <h1 data-testid="h1tag">Contact me</h1>
+        <section className="contact-form">
+            <h1 className="form-heading">Contact Me</h1>
             <form  id="contact-form" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="name">Name:</label>
                 <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
             </div>
             <div>
-                <label htmlFor="email">Email address</label>
+                <label htmlFor="email">Email address:</label>
                 <input type="email" name="email" defaultValue={email} onBlur={handleChange}/>
             </div>
             <div>
                 <label htmlFor="message">Message:</label>
-                <input type="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                <textarea
+                 name="message" defaultValue={message} onBlur={handleChange} rows="5" 
+                />
             </div>
             {errorMessage && (
                 <div>
@@ -76,6 +81,7 @@ function handleSubmit(e) {
             )}
             <button data-testid="button" type="submit">Submit</button>
             </form>
+            <Footer />
         </section>
     );
 }
