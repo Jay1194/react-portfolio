@@ -5,6 +5,8 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio/portfolio';
+import Resume from './components/Resume/resume';
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('Main');
@@ -17,7 +19,10 @@ function App() {
         return <About />;
       case 'Contact':
         return <ContactForm />;
-      
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Resume':
+        return <Resume />;
       default:
         return <Main />;
     }

@@ -14,12 +14,12 @@ function DisplayGitHubIcon() {
 
 function DisplayFooterIcons() {
     return (
-        <div className="socials">
-            <p>
+        <div  className="socials">
+            <a href="/"><p>
                 © 2023, Jayden Taylor 
                 <br/> 
             <span>Powered By React</span>
-            </p> 
+            </p></a>
             
            <a href="https://github.com/Jay1194"><AiFillGithub className="github icon-sizes" /></a>
            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><AiFillLinkedin className="linkdn icon-sizes" /> </a>

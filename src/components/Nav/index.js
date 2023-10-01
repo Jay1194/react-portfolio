@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import avatar from '../Gallery/avatar.jpeg'
 
 
 class Nav extends Component {
@@ -48,7 +49,12 @@ class Nav extends Component {
       return (
         <header>
         <nav className={hidden ? 'hidden-nav' : 'nav'}>
-          <ul className='header-ul'>
+          <ul>
+            <li>
+          <a href="/">
+            <img class="avatar" src={avatar} />
+              </a>
+          </li>
             <li>
               <a onClick={() => this.handleNavLinkClick('About')}
              >About Me
