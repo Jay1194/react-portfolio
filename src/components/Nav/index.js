@@ -32,10 +32,16 @@ class Nav extends Component {
   
       this.setState({ lastScrollTop: scrollTop });
     };
-    handleContactClick = () => {
-        this.props.setContactSelected(true);
+
+    handleNavLinkClick = (componentName) => {
+        this.props.setActiveComponent(componentName);
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth', 
+      });
     };
-  
+
     render() {
       const { hidden } = this.state;
     
@@ -44,18 +50,18 @@ class Nav extends Component {
         <nav className={hidden ? 'hidden-nav' : 'nav'}>
           <ul className='header-ul'>
             <li>
-              <a href="#About"
+              <a onClick={() => this.handleNavLinkClick('About')}
              >About Me
              </a>
             </li>
             <li>
-              <a>Portfolio</a>
+              <a onClick={() => this.handleNavLinkClick('Portfolio')}>Portfolio</a>
             </li>
             <li>
-              <a onClick={this.handleContactClick}>Contact</a>
+            <a onClick={() => this.handleNavLinkClick('Contact')}>Contact</a>
             </li>
             <li>
-              <a>Resume</a>
+              <a onClick={() => this.handleNavLinkClick('Resume')}>Resume</a>
             </li>
           </ul>
         </nav>

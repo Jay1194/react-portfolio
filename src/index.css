@@ -33,6 +33,11 @@ body {
 .hidden-nav {
 display:none;
 }
+
+nav li:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
 /* Moving back-ground*/
 video {
   width: 100%;
@@ -65,29 +70,28 @@ video {
 }
 /* Form */
 .form-heading {
-  margin: 11% 0 2% 0; /* Adjust the margin to push down the heading */
-  /* Additional styling for the heading */
+  margin: 11% 0 0 0; 
   font-size: 4vw;
   color: #ffffff;
 }
 .contact-form {
   display:flex;
   justify-content: center;
-  align-items: center; /* Vertically center */
-  height: 100%; /* Make the container take up the entire viewport height */
+  align-items: center; 
+  height: 100%; 
   flex-direction: column;
   
 }
 
 form {
-  width: 80%; /* Adjust the width as needed */
-  max-width: 30%; /* Maximum width for responsiveness */
-  margin: auto; /* Center the form horizontally */
+  width: 80%;
+  max-width: 30%; 
+  margin: 1% auto 5% ; 
   padding: 20px;
   background-color: var(--darker);
   border: 1px solid #ccc;
   border-radius: 40px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.925); /* Box shadow */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.925); 
 }
 
 /* Form labels */
@@ -110,9 +114,8 @@ textarea {
   font-size: 16px;
 }
 
-/* Textarea */
 textarea {
-  resize: vertical; /* Allow vertical resizing of textarea */
+  resize: vertical; 
 }
 
 /* Submit button */
@@ -168,19 +171,18 @@ button[type="submit"]:hover {
 }
 
 .Me {
-  height: 47vh;
+  height: 50vh;
   width: 17vw;
   border-radius: 40px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
-
 }
 .aboutME  h1{
  font-size: 3.5vw;
+ text-align: center;
  color: var(--tertiary);
  margin: 4vw;
- text-align: center;
  text-decoration: underline;
- text-shadow:  0 0 25px rgba(0, 0, 0, 0.9);;
+ text-shadow:  0 0 25px rgba(0, 0, 0, 0.9);
 }
 .content0 div {
   padding: 2vw;
@@ -256,12 +258,11 @@ nav {
   padding: 15px; 
   position: fixed; 
   width: 100%; 
-  z-index: 1000; 
+  z-index: 1000;
  }
  
 /*Footer Styles */
 .footer {
-  margin-top: 4.45vw;
   background-color: var(--secondary);
   width: 100%;
   padding: 1% 0;

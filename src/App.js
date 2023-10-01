@@ -1,33 +1,33 @@
-
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './App.css';
-import Main from './components/Main'
-import Nav from './components/Nav'
-import About from './components/About'
-import Footer from './components/Footer'
-import ContactForm from "./components/Contact"
+import Main from './components/Main';
+import Nav from './components/Nav';
+import About from './components/About';
+import Footer from './components/Footer';
+import ContactForm from './components/Contact';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  const [activeComponent, setActiveComponent] = useState('Main');
+
+  const renderComponent = () => {
+    switch (activeComponent) {
+      case 'Main':
+        return <Main />;
+      case 'About':
+        return <About />;
+      case 'Contact':
+        return <ContactForm />;
+      
+      default:
+        return <Main />;
+    }
+  };
+
   return (
     <div>
-      <Nav
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-        
-      ></Nav>
-
-      <section>
-      {!contactSelected ? (
-          <>
-      <Main/>
-      <About/>
-      <Footer/>
-      </>
-     ) : (
-        <ContactForm setContactSelected={setContactSelected} />
-        )}
-      </section>
+      <Nav setActiveComponent={setActiveComponent} activeComponent={activeComponent} />
+      <section>{renderComponent()}</section>
+      <Footer />
     </div>
   );
 }

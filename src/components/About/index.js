@@ -6,11 +6,12 @@ import DevIMG from '../../assets/Images/DevIMG.jpg'
 const About = () => {
     return(
         <section>
-            <div className="aboutME">
-                <h1 id="About">About Me</h1>
+                <div className="aboutME">
+                <h1>About Me</h1>
             </div>
             <section className="content0">
-                <div class="content00">
+                
+            <div class="content00">
             <img src={DevIMG} className="Me"  alt="Developer image"/>
             </div>
             <div className='content1'>
