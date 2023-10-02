@@ -348,6 +348,21 @@ height: 30px;
   font-size: 4vw;
 }
 
+.resume {
+  width:20%;
+  height: 40%;
+  margin: 2.5% auto;
+  display: flex;
+  justify-content: center;
+}
+.center {
+  text-align: center;
+  color: var(--tertiary);
+  font-size: 1.5vw;
+}
+a {
+  text-decoration:none;
+}
  /* Screen Sizes*/
 @media screen and (max-width: 414px) {
   nav li {
