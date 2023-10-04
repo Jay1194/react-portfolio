@@ -50,7 +50,7 @@ class Nav extends Component {
         <header>
         <nav className={hidden ? 'hidden-nav' : 'nav'}>
           <ul>
-            <li>
+            <li class="no-border">
           <a href="/">
             <img class="avatar" src={avatar} />
               </a>

@@ -59,8 +59,9 @@ nav {
   padding: 2px; 
   position: fixed; 
   width: 100%; 
-  z-index: 1000;
+  z-index: 1111;
   top:0;
+  border-bottom: var(--dark) 1px solid;
  }
 
 /* Hide Nav Bar*/ 
@@ -107,7 +108,7 @@ video {
 .form-heading {
   margin: 11% 0 0 0; 
   font-size: 4vw;
-  color: #ffffff;
+  color: var(--tertiary);
 }
 .contact-form {
   display:flex;
@@ -202,14 +203,6 @@ button[type="submit"]:hover {
   width: 17vw;
   border-radius: 40px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
-}
-.aboutME  h1{
- font-size: 3.5vw;
- text-align: center;
- color: var(--tertiary);
- margin: 4vw;
- text-decoration: underline;
- text-shadow:  0 0 25px rgba(0, 0, 0, 0.9);
 }
 .content0 div {
   padding: 2vw;
@@ -307,16 +300,14 @@ height: 30px;
 }
 
 /* Portfolio Section */
-/* CSS for the image container */
 .image-container {
-  display: flex;
+  display:inline-flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
-  width: 80%; 
-  margin: 4% auto;
+  width: 50%; 
+  margin: 1% auto;
 }
-/* CSS for the normal image placeholders */
 .image-placeholder {
   display: flex;
   align-items: center;
@@ -326,28 +317,81 @@ height: 30px;
   font-size: 24px; 
   padding: 16px; 
   border: 2px dashed #ffffff; 
-  height: 30vh;
-  width: 40%;
+  height: 100%;
+  width: 60%;
   margin: 1%;
   border-radius: 40px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
 }
-/* CSS for the GIF image placeholders */
-.gif-placeholder {
-  /*background-image: url('./components/Gallery/Placeholder.jpg');*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  
+.image-placeholder img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  position: relative;
+  overflow: hidden;
 }
+.cover-image {
+  transition: transform 0.1s ease-in-out;
+}
+.cover-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.cover-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: #ffffff; 
+  font-weight: bold;
+  font-size: 2.8vw; 
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  width: 85%;
+}
+.cover-text p {
+  font-size: 1.2vw;
+}
+.project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.image-placeholder:hover .cover-image {
+  transform: scale(1.1);
+}
+.image-placeholder:hover .cover-background,
+.image-placeholder:hover .cover-text {
+  opacity: 0;
+}
+.image-placeholder:hover .project-image {
+  opacity: 1;
+}
+
+/*resume section */
 .project-title {
   display: flex;
-  color: #fff;
+  color: var(--tertiary);
   margin: 12% auto 1%;
   justify-content: center;
   font-size: 4vw;
+  margin-bottom: 3%;
 }
-
 .resume {
   width:20%;
   height: 40%;
@@ -364,21 +408,46 @@ a {
   text-decoration:none;
 }
  /* Screen Sizes*/
-@media screen and (max-width: 414px) {
-  nav li {
-    font-size:5.5vw;
-    margin-right:5vw;
+@media screen and (max-width: 415px) {
+  /* navigation */
+  .avatar{
+    width:80%;
+    height:80%;
+    margin-top: 3%;
+  }
+  .no-border {
+    border-bottom: none;
+  }
+  .nav {
+    border-bottom: 2px var(--secondary) solid;
+  }
+  nav ul {
     display: flex;
-    flex-direction: column; 
+    width: 25%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  nav li {
+    font-size:5vw;
+    display:flex;
     margin-bottom: 5%;
-    width: 50%;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border-bottom: var(--secondary) 1px solid;
     }
+  .project-title  {
+    margin: 75vw 0 5vw 0;
+    font-size: 8.5vw;
+    }
+
+  /* type efeect */
   .typeEffect {
     font-size:7vw;
     width: 80%;
     text-align: center;
   }
+
+  /* about me */
   .aboutME h1 {
     font-size:9vw;
   }
@@ -395,7 +464,7 @@ a {
   }
   .content0 {
     width: 100%;
-    margin: auto;
+    margin:auto;
     display:flex;
     flex-wrap:wrap;
     flex-direction: column;
@@ -436,7 +505,36 @@ a {
   .socials span {
     font-size: 2.2vw;
   }
+  /* footer */
+  .footer {
+    height: 10vw;
+    padding: 2% 0;
+    margin-top: 5.5vw;
+  }
+/* Projects */
+  .image-container {
+    margin: 3% auto 7%;
+    display:flex;
+    width: 100%;
+  }
+  .cover-text {
+    font-size: 5vw;
+  }
+  .cover-text p {
+    font-size: 3vw;
+  }
+  /* Contact secion */
+  #contact-form {
+  max-width: none;
 }
-
+  /* resume */
+  .resume {
+    width:50%;
+  }
+  .center {
+    font-size: 4vw;
+    margin-bottom: 40vw;
+  }
+}
 
 

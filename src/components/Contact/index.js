@@ -58,7 +58,7 @@ function handleSubmit(e) {
 
     return (
         <section className="contact-form">
-            <h1 className="form-heading">Contact Me</h1>
+            <h1 className="project-title">Contact Me</h1>
             <form  id="contact-form" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="name">Name:</label>
