@@ -61,7 +61,7 @@ nav {
   width: 100%; 
   z-index: 1111;
   top:0;
-  border-bottom: var(--dark) 1px solid;
+  border-bottom: var(--secondary) 2px solid;
  }
 
 /* Hide Nav Bar*/ 
@@ -408,7 +408,34 @@ a {
   text-decoration:none;
 }
  /* Screen Sizes*/
-@media screen and (max-width: 415px) {
+ @media screen and (max-width: 1368px) {
+  nav li {
+    font-size: 2.3vw;
+  }
+  .contact-form {
+    margin-bottom: 7vw;
+  }
+  .center {
+    margin-bottom: 12vw;
+  }
+ }
+ @media screen and (max-width: 1280px) {
+  .center {
+    margin-bottom: 8vw;
+  }
+ }
+ @media screen and (max-width: 1024px) {
+nav li {
+  font-size: 2vw;
+}
+.center {
+  margin-bottom: 4vw;
+}
+form {
+  max-width: 50%;
+}
+ }
+@media screen and (max-width: 912px) {
   /* navigation */
   .avatar{
     width:80%;
@@ -440,7 +467,7 @@ a {
     font-size: 8.5vw;
     }
 
-  /* type efeect */
+  /* type effect */
   .typeEffect {
     font-size:7vw;
     width: 80%;
@@ -533,7 +560,16 @@ a {
   }
   .center {
     font-size: 4vw;
-    margin-bottom: 40vw;
+    margin-bottom: 41vw;
+  }
+}
+@media screen and (max-width: 412px) {
+  .center {
+    margin-bottom: 59vw;
+  }
+  #contact-form {
+    max-width: 70%;
+    margin-bottom: 13vw;
   }
 }
 
