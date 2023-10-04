@@ -1,18 +1,35 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.dfaab5ee.css",
-    "main.js": "/react-portfolio/static/js/main.cd3cb682.js",
+    "main.css": "/react-portfolio/static/css/main.f16c22db.css",
+    "main.js": "/react-portfolio/static/js/main.e25a5151.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/videoFl.mp4": "/react-portfolio/static/media/videoFl.a2703484bb9eee7d0c2e.mp4",
+    "static/media/Horiseon.gif": "/react-portfolio/static/media/Horiseon.f0e7a86992c33d86d4d0.gif",
+    "static/media/Run-Buddy.gif": "/react-portfolio/static/media/Run-Buddy.03266b301799aa3c6eb7.gif",
+    "static/media/Oh-Snap.gif": "/react-portfolio/static/media/Oh-Snap.ceec35f5384ceab962fc.gif",
+    "static/media/React App.gif": "/react-portfolio/static/media/React App.fecf977e9119ca1ac5b6.gif",
+    "static/media/Pro-portfolio.gif": "/react-portfolio/static/media/Pro-portfolio.9d24dedb5a8ee87a9db6.gif",
+    "static/media/pageGen.gif": "/react-portfolio/static/media/pageGen.f172ba5db5600d025399.gif",
+    "static/media/readME-Gen.gif": "/react-portfolio/static/media/readME-Gen.3ad7a78e452ec71767f1.gif",
+    "static/media/Taskmaster-Pro.gif": "/react-portfolio/static/media/Taskmaster-Pro.7dcfd0a5c60e6e8a6878.gif",
+    "static/media/Weather-Dashboard.gif": "/react-portfolio/static/media/Weather-Dashboard.d700c943f3bf17c99764.gif",
+    "static/media/Git-It-Done.gif": "/react-portfolio/static/media/Git-It-Done.907eeee3d156c64d8e76.gif",
+    "static/media/Taskinator.gif": "/react-portfolio/static/media/Taskinator.462fe537e32c61762204.gif",
+    "static/media/code-quiz.gif": "/react-portfolio/static/media/code-quiz.cadda562a6a5f2d68f93.gif",
+    "static/media/Password-Generator.gif": "/react-portfolio/static/media/Password-Generator.0a6047a8b54c7a0e7e6c.gif",
+    "static/media/Robot-Gladiators.gif": "/react-portfolio/static/media/Robot-Gladiators.c0b7de4ad20eb2ae8dab.gif",
+    "static/media/Work-Day.gif": "/react-portfolio/static/media/Work-Day.f48885af87bd2fb4246f.gif",
     "static/media/DevIMG.jpg": "/react-portfolio/static/media/DevIMG.2343fb9858295e808c42.jpg",
+    "static/media/avatar.jpeg": "/react-portfolio/static/media/avatar.d1d50a2665c6cc03432c.jpeg",
+    "static/media/Jayden Taylor.gif": "/react-portfolio/static/media/Jayden Taylor.af94ab95fc231fafef3a.gif",
     "static/media/SMU.png": "/react-portfolio/static/media/SMU.156154d7fa9cd83b62c5.png",
     "index.html": "/react-portfolio/index.html",
-    "main.dfaab5ee.css.map": "/react-portfolio/static/css/main.dfaab5ee.css.map",
-    "main.cd3cb682.js.map": "/react-portfolio/static/js/main.cd3cb682.js.map",
+    "main.f16c22db.css.map": "/react-portfolio/static/css/main.f16c22db.css.map",
+    "main.e25a5151.js.map": "/react-portfolio/static/js/main.e25a5151.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfaab5ee.css",
-    "static/js/main.cd3cb682.js"
+    "static/css/main.f16c22db.css",
+    "static/js/main.e25a5151.js"
   ]
 }
