@@ -2,6 +2,7 @@ import React from 'react'
 import {AiOutlineHtml5, AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
 import { FaNodeJs, FaReact } from 'react-icons/fa'
 import { BiLogoCss3, BiLogoJavascript} from 'react-icons/bi'
+import { SiExpress, SiMysql } from "react-icons/si";
 import SMUBadge from '../../assets/Images/SMU.png'
 
 function DisplayGitHubIcon() {
@@ -16,7 +17,7 @@ function DisplayFooterIcons() {
     return (
         <div  className="socials">
             <a href="/"><p>
-                © 2023, Jayden Taylor 
+                © 2024, Jayden Taylor 
                 <br/> 
             <span>Powered By React</span>
             </p></a>
@@ -35,6 +36,8 @@ function DisplayIcons() {
             <BiLogoCss3 className ="icon-css icon-size" />
             <BiLogoJavascript className="icon-js icon-size" />
             <FaNodeJs className="icon-node icon-size" />
+            <SiExpress className="icon-ex icon-size"/>
+            <SiMysql className="icon-sql icon-size"/>
             <FaReact className="icon-react icon-size" />
         </div>
     )

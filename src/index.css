@@ -199,9 +199,9 @@ button[type="submit"]:hover {
   height: 50%;
 }
 .Me {
-  height: 50vh;
-  width: 17vw;
-  border-radius: 40px;
+  height: 90%;
+  width: 24vw;
+  border-radius: 300px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
 }
 .content0 div {
@@ -255,8 +255,14 @@ height: 30px;
 .icon-node {
   color: green;
 }
+.icon-ex {
+  color:#fafafa;
+}
+.icon-sql {
+  color:aqua;
+}
 .icon-react {
-  color: skyblue;
+  color:cornflowerblue;
 }
 
 /*Footer Styles */

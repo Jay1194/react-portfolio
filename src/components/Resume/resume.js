@@ -1,10 +1,10 @@
 import React from 'react';
-import resume from '../Gallery/Jayden Taylor.gif'
+import resume from "../Gallery/Jaydens_resume.png"
 
 
 const Resume = () => {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1VyR_LbYLvUj5bp-N0lmhPjXRLABJE0q8';
-    const resumeFileName = "Jayden_Taylor's_Resume.pdf";
+    const resumeUrl = 'https://drive.google.com/file/d/1kLKldEUQdgHzBITAzu2UU4L4WKcavd4l/view?usp=sharing';
+    const resumeFileName = "Jaydens_resume.png";
 
     return (
         <section> 

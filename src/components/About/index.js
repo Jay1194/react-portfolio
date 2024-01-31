@@ -1,6 +1,6 @@
 import React from 'react';
 import {DisplayIcons, DisplayGitHubIcon} from '../Icons/DisplayIcons'
-import DevIMG from '../../assets/Images/DevIMG.jpg'
+import DevIMG from '../../assets/Images/DevIMG.png'
 
 
 const About = () => {
@@ -13,15 +13,11 @@ const About = () => {
             </div>
             <div className='content1'>
             <h1 className="space">Jayden Taylor<a className="space" href="https://github.com/Jay1194"><span><DisplayGitHubIcon/></span></a></h1>
-            <h3>Front-End Software Developer</h3>
-            <p>Hello, I'm Jayden, a passionate front-end software developer who recently graduated
-                from the SMU Bootcamp. With a strong foundation in CSS, HTML, JavaScript, and jQuery,
-                 I thrive in creating visually appealing and interactive web experiences. My proficiency
-                  extends to working with third-party APIs and server-side APIs, allowing me to harness
-                   external data and services to enhance functionality. The Document Object Model (DOM)
-                    is my playground, where I bring designs to life and ensure seamless user interactions.
-                    I'm excited about the ever-evolving tech landscape and look forward to contributing my
-                    skills to innovative projects.</p>
+            <h3>Full-Stack Software Engineer</h3>
+            <p>
+                Hi, I'm Jayden, a versatile full-stack developer and recent SMU Bootcamp graduate. My expertise spans front-end technologies like CSS, HTML, JavaScript, and jQuery, as well as back-end skills in Node.js, Express.js, SQL, ORM, and MVC architecture. I excel in creating visually appealing web experiences and integrating third-party APIs for enhanced functionality.
+                With a focus on OOP and TDD, I'm ready to bring my skills to innovative projects in the dynamic tech landscape.
+            </p>
             </div>
             <div className="content2">
                 <h3>
