@@ -66,10 +66,10 @@ class Nav extends Component {
               {isProjectsHovered && (
                 <ul className="sub-menu ad ">
                   <li>
-                    <a onClick={() => this.handleNavLinkClick('FrontEndProjects')}>Front-End</a>
+                    <a onClick={() => this.handleNavLinkClick('FrontEndProjects')}>Front</a>
                   </li>
                   <li>
-                    <a onClick={() => this.handleNavLinkClick('BackEndProjects')}>Back-End</a>
+                    <a onClick={() => this.handleNavLinkClick('BackEndProjects')}>Back</a>
                   </li>
                 </ul>
               )}

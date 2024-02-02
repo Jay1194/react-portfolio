@@ -425,6 +425,11 @@ a {
 
  /* Screen Sizes*/
  @media screen and (max-width: 1368px) {
+  .ad {
+    color: white;
+    font-size: 1.0vw;
+    flex-direction: column;
+   }
   nav li {
     font-size: 2.3vw;
   }
@@ -434,12 +439,16 @@ a {
   .center {
     margin-bottom: 12vw;
   }
+  
  }
  @media screen and (max-width: 1280px) {
   .center {
     margin-bottom: 8vw;
   }
  }
+ .sub-menu li a {
+  font-size: 2vw;
+}
  @media screen and (max-width: 1024px) {
 nav li {
   font-size: 2vw;
@@ -449,8 +458,8 @@ nav li {
 }
 form {
   max-width: 50%;
-}
  }
+}
 @media screen and (max-width: 912px) {
   /* navigation */
   .avatar{
@@ -553,6 +562,7 @@ form {
     padding: 8% 0 ;
     margin: 0;
   }
+   
 /* Projects */
   .image-container {
     margin: 3% auto 7%;
@@ -577,6 +587,10 @@ form {
     font-size: 4vw;
     margin-bottom: 41vw;
   }
+  .sub-menu li a {
+    font-size: 5vw;
+    margin: 5.5vw 0 3.5vw 0;
+  }
 }
 @media screen and (max-width: 412px) {
   .center {
@@ -586,6 +600,10 @@ form {
     max-width: 70%;
     margin-bottom: 13vw;
   }
+.sub-menu li a {
+  font-size: 5vw;
+  margin: 5.5vw 0 3.5vw 0;
+}
 }
 
 
