@@ -10,6 +10,7 @@
 .glow{
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
 }
+
 :root {
   --primary: #1B2021;
   --secondary: #51513D;
@@ -110,14 +111,15 @@ video {
   font-size: 4vw;
   color: var(--tertiary);
 }
+
 .contact-form {
   display:flex;
   justify-content: center;
   align-items: center; 
   height: 100%; 
   flex-direction: column;
-  
 }
+
 form {
   width: 80%;
   max-width: 30%; 
@@ -413,6 +415,8 @@ height: 30px;
 a {
   text-decoration:none;
 }
+/* form */
+
  /* Screen Sizes*/
  @media screen and (max-width: 1368px) {
   nav li {
