@@ -1,5 +1,7 @@
 import React from 'react';
 // project images
+import ohSnap from './Projects/Oh-Snap.gif';
+import myReact from './Projects/React App.gif';
 import openWeather from './Projects/Weather-Dashboard.gif';
 import gitDone from './Projects/Git-It-Done.gif';
 import passwordGenerator from './Projects/Password-Generator.gif';
@@ -18,6 +20,39 @@ const FrontEndProjects = () => {
         <div>
           <h1 className="project-title">Front-End Applications</h1>
         </div>
+        <article className="image-container">
+          <div className="image-placeholder">
+            <a href="https://github.com/Jay1194/photo-port">
+            <div className="cover-background">
+              <div className="cover-text">
+                <h1>Photo Port</h1>
+                <p>React / hooks / props / state / jsx</p>
+                </div>
+              </div>
+              <img 
+              className="project-image"
+              src={ohSnap}
+               alt="displayed project" />
+              </a>
+          </div>
+          </article>
+          <article className="image-container">
+          <div className="image-placeholder">
+            <a href="https://github.com/Jay1194/react-portfolio">
+              <div className="cover-background">
+              <div className="cover-text">
+                <h1>React Portfolio</h1>
+                <p>React / hooks / props / state / jsx</p>
+                </div>
+              </div>
+              <img
+               className="project-image"
+               src={myReact}
+               alt="displayed project" 
+               />
+              </a>
+          </div>
+          </article>
           <article className="image-container">
           <div className="image-placeholder">
             <a href="https://github.com/Jay1194/Weather-Dashboard">

@@ -65,6 +65,12 @@ nav {
   border-bottom: var(--secondary) 2px solid;
  }
 
+ .ad {
+  color: white;
+  font-size: 1.0vw;
+  flex-direction: column;
+ }
+
 /* Hide Nav Bar*/ 
 .hidden-nav {
 display:none;
@@ -201,8 +207,8 @@ button[type="submit"]:hover {
   height: 50%;
 }
 .Me {
-  height: 90%;
-  width: 24vw;
+  height: 80%;
+  width: 25vw;
   border-radius: 300px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
 }

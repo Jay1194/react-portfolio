@@ -7,7 +7,7 @@ class Nav extends Component {
     this.state = {
       lastScrollTop: 0,
       hidden: false,
-      isProjectsHovered: false, // Track if "Projects" is being hovered
+      isProjectsHovered: false, 
     };
   }
 
@@ -24,10 +24,8 @@ class Nav extends Component {
     const { lastScrollTop } = this.state;
 
     if (scrollTop > lastScrollTop) {
-      // Scrolling down, hide the navigation bar
       this.setState({ hidden: true });
     } else {
-      // Scrolling up, show the navigation bar
       this.setState({ hidden: false });
     }
 
@@ -60,13 +58,13 @@ class Nav extends Component {
               </a>
             </li>
             <li
-              className={isProjectsHovered ? 'projects-hovered' : ''} // Add a class when projects are hovered
+              className={isProjectsHovered ? 'projects-hovered' : ''} 
               onMouseEnter={() => this.handleProjectsHover(true)}
               onMouseLeave={() => this.handleProjectsHover(false)}
             >
               <a>Projects</a>
               {isProjectsHovered && (
-                <ul className="sub-menu">
+                <ul className="sub-menu ad ">
                   <li>
                     <a onClick={() => this.handleNavLinkClick('FrontEndProjects')}>Front-End</a>
                   </li>
@@ -79,7 +77,6 @@ class Nav extends Component {
             <li>
               <a onClick={() => this.handleNavLinkClick('About')}>About Me</a>
             </li>
-            {/* Other menu items */}
             <li>
               <a onClick={() => this.handleNavLinkClick('Resume')}>Resume</a>
             </li>
